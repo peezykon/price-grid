@@ -35,7 +35,7 @@ html {
 }
 
 .container {
-    width: 50%;
+    width: 60%;
     max-height: 60rem;
     position: absolute;
     top: 50%;
@@ -69,6 +69,7 @@ html {
     font-family: inherit;
     color: #c1c4cd;
     line-height: 1.5;
+    white-space: pre-line;
 }
 
 .heading-text-small {
@@ -158,17 +159,36 @@ h3>span {
     html {
         font-size: 50%;
     }
+    .container {
+        width: 75%;
+    }
+    .para-text {
+        white-space: normal;
+    }
+    .attribution {
+        bottom: 1%;
+    }
 }
 
 @media only screen and (max-width: 43.75em) {
     .container {
-        width: 70%;
+        width: 90%;
+        padding: 7rem 0;
     }
     .main {
         display: grid;
         grid-template-columns: 1fr;
     }
     .attribution {
-        bottom: -50%;
+        bottom: -70%;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .container {
+        padding: 0;
+    }
+    .attribution {
+        bottom: -10%;
     }
 }
